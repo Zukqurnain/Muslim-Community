@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>TMC </title>
     <link rel="stylesheet" href="index.css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
@@ -18,13 +18,13 @@
       <div class="container-fluid bg-purple">
         <div class="container">
           <div class="row">
-            <div class="col-md-2 col-12 text-sm-center">
+            <div class="col-md-2 col-12 text-center">
               <img src="logo.png" alt=" "/>
             </div>
             <div class="col-md-7 col-12 align-self-center pr-0">
               <div class="input-group input-group-sm">
                 <div class=" text-white m-auto">
-                  EN <img class="mr-2 p-1" src="down-arrow.png" alt="" />
+                  EN <img class="mr-2 p-1" src="yellow-arrow.png" alt="" />
                 </div>
                 <div class="input-group-prepend mr-0">
                   <span class="input-group-text col-bar">
@@ -46,7 +46,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-3 text-center mt-4 mt-sm-0 align-self-center">
+            <div class="col-12 col-md-3 text-center my-4 my-sm-0 align-self-center">
               <span>
                 <img src="fb.png" alt=""/></a>
                 <a href=""><img src="twitter.png" alt=""/></a>
@@ -73,7 +73,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <a class="nav-link active" href="#">HOME</a>
-              <a class="nav-link ml-2" href="#">ABOUT</a>
+              <a class="nav-link ml--lg-2" href="#">ABOUT</a>
               <a class="nav-link" href="#">REGIONS/AREA</a>
               <a class="nav-link" href="#">EVENTS</a>
               <a class="nav-link" href="#">ASK IMAM</a>
@@ -119,8 +119,8 @@
       </div>
 
       <!-- First Page -->
-      <div class="container w-75 pl-0 bg-col1 d-flex justify-content-center">
-        <div class="ask-imam d-flex">
+      <div class="container w-75 pl-sm-0 bg-col1 d-flex justify-content-center">
+        <div class="ask-imam d-md-flex">
           <div class="text-center bg-col px-3">
             <h1 class="mt-2">TMC</h1>
             <p>The Muslim Connection</p>
@@ -131,8 +131,8 @@
             nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
             cursus a sit amet mauris.
           </div>
-          <div class="align-self-center">
-            <button class="rounded btn">ASK IMAM</button>
+          <div class="align-self-center  text-md-right text-center">
+            <button class="rounded btn my-md-0 my-3">ASK IMAM</button>
           </div>
         </div>
       </div>
@@ -160,10 +160,10 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 mb-3">
-            <div class="card h-100 text-center bg-grey">
+            <div class="card h-100 bg-grey">
               <div class="card-body d-flex align-items-baseline">
                 <h5 class="card-title"><img src="announce.png" alt="" /></h5>
-                <div>
+                <div class="ml-2">
                   <h6 class="card-subtitle mb-2">QURAN RECITATION</h6>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
@@ -238,9 +238,7 @@
       <div class="bg-f3 mt-5">
         <div class="container p-3">
           <h1 class="font-weight-bolder mt-3 text-center urgent-donation">
-            <img src="lines.png" alt="" />
             URGENT DONATIONS
-            <img src="lines.png" alt="" />
           </h1>
           <h5 class="text-center my-4"><img src="circle.png" alt="" /></h5>
           <div class="row mt-3">
@@ -298,15 +296,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="col py-2 text-center">
+                <div class="col-12 py-2 text-center">
                   <button class="donate-btn font-weight-bolder w-75">
                     DONATE FOR THIS PROJECT
                   </button>
                 </div>
               </div>
             </div>
-            <div class="col mt-sm-3">
-              <img src="mosque.png" alt="" />
+            <div class="col-12 col-md-6 mt-sm-3">
+              <img src="mosque.png" class="img-fluid h-100" alt="" />
             </div>
           </div>
         </div>
@@ -328,15 +326,26 @@
 
       <!-- news letter -->
       <div class="container-fluid border-top bg-img2">
-        <div class="mt-5">
-          <h1 class="text-uppercase tmc text-center font-weight-bolder">
-            <img src="lines.png" alt="" />
+        <div class="mt-5 container">
+          <h1 class="text-uppercase tmc text-center font-weight-bolder lines">
             subscribe to tmc @usf
-            <img src="lines.png" alt="" />
           </h1>
+          <form class=" form-inline justify-content-center row p-5">
+
+            <!-- Name -->
+            <input type="text" id="defaultSubscriptionFormPassword" class="form-control m-2 col col-md-4 form" placeholder="Name">
+        
+            <!-- Email -->
+            <input type="email" id="defaultSubscriptionFormEmail" class="form-control m-2 col col-md-4 form" placeholder="E-mail">
+        
+            <!-- Sign in button -->
+            <button class="btn btns mt-2 mt-sm-0 col-10 col-md-2" type="submit">SUBSCRIBE</button>
+        
+        
+        </form>
         </div>
 
-        <div class="d-flex justify-content-center">
+        <!-- <div class="d-flex justify-content-center">
           <form>
             <div class="row p-sm-3">
               <div class="col">
@@ -358,7 +367,7 @@
               </div>
             </div>
           </form>
-        </div>
+        </div> -->
       </div>
 
       <!-- news letter --> 
@@ -373,7 +382,6 @@
                     src="family.png"
                     width="100"
                     height="100"
-                    class="h-100"
                     alt=""
                   />
                 </div>
@@ -390,7 +398,7 @@
                       <img src="heart.png" alt="" />&nbsp; 50 likes
                     </div>
                     <div class="col">
-                      <img src="comments.png" alt="" />20 comments
+                      <img src="comments.png" alt="" class="mr-1" />20 comments
                     </div>
                   </div>
                 </div>
@@ -401,7 +409,6 @@
                     src="eid.png"
                     width="100"
                     height="100"
-                    class="h-100"
                     alt=""
                   />
                 </div>
@@ -418,7 +425,7 @@
                       <img src="heart.png" alt="" />&nbsp; 50 likes
                     </div>
                     <div class="col">
-                      <img src="comments.png" alt="" />20 comments
+                      <img src="comments.png" class="mr-1" alt="" />20 comments
                     </div>
                   </div>
                 </div>
@@ -429,7 +436,6 @@
                     src="namazi.png"
                     width="100"
                     height="100"
-                    class="h-100"
                     alt=""
                   />
                 </div>
@@ -446,7 +452,7 @@
                       <img src="heart.png" alt="" />&nbsp; 50 likes
                     </div>
                     <div class="col ml-0 pl-0">
-                      <img src="comments.png" alt="" />20 comments
+                      <img src="comments.png" alt="" class="mr-1" />20 comments
                     </div>
                   </div>
                 </div>
@@ -456,7 +462,7 @@
               </button>
             </div>
             <div class="col-md-6">
-              <h1 class="open-sans">FAQS ABOUT ISLAM</h1>
+              <h1 class="open-sans mt-sm-0 mt-3">FAQS ABOUT ISLAM</h1>
               <!--Accordion wrapper-->
               <div
                 class="accordion md-accordion mt-3"
@@ -757,76 +763,47 @@
         </div>
       </div>
 
-      <div class="container-fluid bg-color">
-        <div class="container text-center">
-            <h1 class="pt-3 open-sans">
-              <img src="white-lines.png" alt="">
+      <div class="container-fluid bg-color d-xl-block d-none">
+        <div class="container">
+            <h1 class="pt-3 open-sans text-center lines">
               OUR GALLERY
-              <img src="white-lines.png" alt="">
             </h1>
             
-            <div class="flex">
-              <div class="item-1">
-                <img src="muslim.png" alt="">
-                <img src="namazi.png" alt="">
-                
-              </div>
-              <div class="item-2">
-                <img src="ss.png" alt="">
-                <img src="kaaba..png" alt="">
-                <img src="quran.png" alt="">
-              </div>
-              <div class="item-3">
-                <img src="child.png" alt="">
-                <img src="family.png" alt="">
-              </div>
-              <div class="item-4">
-                <img src="women.png" alt="">
-                <img src="namaz-.png" alt="">
-              </div>
-              <div>
-                <img src="girls.png" alt="">
-                <img src="family-2.png" alt="">
-              </div>
+            <div class="d-flex">
+              <figure class="box-1">
+                <img src="gal-1.png" alt="">
+                <img src="gal-6.png" alt="">
+              </figure>
+              <figure class="box-2">
+                <img src="gal-2.png" alt="">
+                <img src="gal-7.png" alt="">
+                <img src="gal-8.png" alt="">
+              </figure>
+              <figure class="box-3">
+                <img src="gal-3.png" alt="">
+                <img src="gal-9.png" alt="">
+              </figure>
+              <figure class="box-4" style="
+">
+                <img src="gal-4.png" alt="">
+                <img src="gal-11.png" alt="">
+              </figure>
+              <figure class="box-5">
+                <img src="gal-5.png" alt="">
+                <img src="gal-10.png" alt="">
+              </figure>
               
-              <div></div>
+              
+              
+              
+              
+              
             </div>
         </div>
       </div>
       <!-- error section -->
 
-      <!-- <div class="container row" style="width: 100%;">
-          <div class="theme-table-image col-sm-6">
-            <img src="side-1.png">
-          </div>
-          <div class="theme-table-image col-sm-6">
-              <h4>LOREM IPSUM MOSK</h4>
-              <p class="p-b-3">
-                <img src="location.png" alt="" />&nbsp; Proin gravida nibh vel
-                velit auctor aliquet. Aenean sollicitudin, <br />
-                <img src="call.png" alt="" /> &nbsp; +1 123 456 78
-                <br />
-                <img src="email.png" alt="" /> &nbsp; info@loremispum.com
-              </p>
-          </div>
-           <div class="theme-table-image col-sm-6">
-              <h4>LOREM IPSUM MOSK</h4>
-              <p class="p-b-3">
-                <img src="location.png" alt="" />&nbsp; Proin gravida nibh vel
-                velit auctor aliquet. Aenean sollicitudin, <br />
-                <img src="call.png" alt="" /> &nbsp; +1 123 456 78
-                <br />
-                <img src="email.png" alt="" /> &nbsp; info@loremispum.com
-              </p>
-          </div>
-          <div class="theme-table-image col-sm-6">
-            <img src="side-2.png">
-          </div>
-         </div>
-         </div> -->
-        
-
-      <!-- <div class="container-fluid bg-col2">
+               <!-- <div class="container-fluid bg-col2">
         <div class="container home-content1">
           <div class="row">
             <div class="col-md-6 content1-left bg-grey"></div>
@@ -875,7 +852,7 @@
             <div class="col-md-6 content1-left bg-grey"></div>
           </div>
         </div>
-        <!-- <div class="container">
+         <div class="container">
           <div class="row images bg-white">
             <div class="col-xs-12 col-md-6">
               <img src="1.png" alt="" />
@@ -935,43 +912,41 @@
               <img src="4.png" alt="" />
             </div>
           </div>
-        </div> -->
-      </div>
+        </div>
+      </div> -->
 
       <!-- error section -->
 
       <div class="container-fluid mt-5">
         <div class="container">
-          <h1 class="text-center open-sans">
-            <img src="lines.png" alt="" />
+          <h1 class="text-center open-sans lines">
             OUR PARTNERS
-            <img src="lines.png" alt="" />
           </h1>
 
           <div class="row">
-            <div class="col-md-2 col-sm-4 col-4">
-              <img src="logo-1.png" alt="" />
+            <div class="col-md-4 col-lg-2 col-sm-6 col-6">
+              <img src="logo-1.png" class="img-fluid" alt="" />
             </div>
-            <div class="col-md-2 col-sm-4 col-4">
-              <img src="logo-2.png" alt="" />
+            <div class="col-md-4 col-lg-2 col-sm-6 col-6">
+              <img src="logo-2.png" class="img-fluid" alt="" />
             </div>
-            <div class="col-md-2 col-sm-4 col-4">
-              <img src="logo-3.png" alt="" />
+            <div class="col-md-4 col-lg-2 col-sm-6 col-6">
+              <img src="logo-3.png" class="img-fluid" alt="" />
             </div>
-            <div class="col-md-2 col-sm-4 col-4">
-              <img src="logo-4.png" alt="" />
+            <div class="col-md-4 col-lg-2 col-sm-6 col-6">
+              <img src="logo-4.png" class="img-fluid" alt="" />
             </div>
-            <div class="col-md-2 col-sm-4 col-4">
-              <img src="logo-5.png" alt="" />
+            <div class="col-md-4 col-lg-2 col-sm-6 col-6">
+              <img src="logo-5.png" class="img-fluid" alt="" />
             </div>
-            <div class="col-md-2 col-sm-4 col-4">
-              <img src="logo-6.png" alt="" />
+            <div class="col-md-4 col-lg-2 col-sm-6 col-6">
+              <img src="logo-6.png" class="img-fluid" alt="" />
             </div>
           </div>
 
           <div class="row mt-4">
             <div class="col-md-6 ">
-              <img src="mosque.png" class="img-fluid" alt="" />
+              <img src="mosque.png" class="img-fluid h-100" alt="" />
             </div>
             <div class="col-md-6">
               <h1 class="text-center">BECOME A PARTNERS</h1>
@@ -999,7 +974,7 @@
 
       <div class="footer container-fluid">
         <div class="container pt-4">
-          <table class="">
+          <table class="table-responsive">
             <tr>
               <td class="payment text-white">Payment
                 <br> <span class="payment-color">Methods</span></td>
