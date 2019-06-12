@@ -8,16 +8,11 @@ body {
   background-color: #091a48;
 }
 
-.bg-img {
-  background-image: url(home-pic.png);
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 150px;
-}
-
 .col-bar {
   background-color: #f9bf00 !important;
   border: 0px solid #ced4da !important;
+  width: 52px;
+  border-radius: 3px 0px 1px 3px !important;
 }
 
 .b-none {
@@ -73,10 +68,20 @@ body {
   border-radius: 4px !important;
 }
 
+.bg-custom a[aria-expanded="true"]:first-child {
+  color: rgb(100, 100, 197);
+  background-color: grey !important;
+}
+
+a.nav-link {
+  font-size: 14pt;
+}
+
 .bg-img {
-  background-image: url(home-pic.png);
-  height: 500px;
-  background-size: cover;
+    background-image: url(home-pic.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .muslim {
@@ -103,37 +108,41 @@ body {
 .title-1 {
   max-width: 600px;
   background-color: #f9bf00;
+  color: #4e3a3e !important;
   height: 34.34px;
   border-radius: 3px;
   font-size: 26px;
-  font-family: 'Light' ,open Sans;
+  font-family: 'Light' , open Sans;
+  font-weight: 100;
 }
 
 .title-2 {
   max-width: 580px;
   background-color: #091a48;
-  color: #a399a4;
+  color: #e9eaec;
   height: 34.34px;
   border-radius: 3px;
   font-size: 26px;
   font-family: 'Light' ,open Sans;
+  font-weight: 100;
 }
 
 .title-3 {
   max-width: 560px;
   background-color: #332a5d;
-  color: #ccc0c8;
+  color: #f6e9ea;
   height: 34.34px;
   border-radius: 3px;
   font-size: 26px;
   font-family: 'Light' ,open Sans;
+  font-weight: 100;
 }
 
 .rounded {
   border-radius: 4px;
   background-color: rgb(9, 26, 72);
   color: #fff2f2;
-  width: 130px;;
+  width: 175px;;
   min-width: 40px;;
   height: 48px;
   outline: none;
@@ -163,6 +172,10 @@ body {
   font-size: 13pt;
 }
 
+.fonts {
+  font-size: 13pt;
+}
+
 .find_events {
   font-size: 25px;
   color: rgb(255, 255, 255);
@@ -183,6 +196,8 @@ body {
   width: 175px;
   height: 48px;
   color: #ffffff;
+  font-size: 20px;
+
 }
 
 .card-width-height {
@@ -200,6 +215,7 @@ body {
 
 .bg-f3 {
   background-color: #f3f3f3;
+  border-top: 1px solid #b7b7b7;
 }
 
 .btn-custom {
@@ -265,11 +281,19 @@ body {
 
 .build-masjid {
   font-family: "Extrabold" , open sans;
-    font-weight: 700;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .para {
   font-family: "semibold" , open sans;
+  text-align: justify;
+}
+
+.parag {
+  font-family: "semibold" , open sans;
+  font-size: 13px;
 }
 
 .border {
@@ -322,8 +346,17 @@ body {
   color: white;
 }
 
+.font-weight-bolder > div {
+  font-size: 16pt;
+}
+
 .bg-img2 {
   background-color: #051133;
+}
+
+.slogans {
+    font-weight: lighter !important;
+    font-size: 13px !important;
 }
 
 .form {
@@ -344,10 +377,6 @@ body {
 .bg-row {
   background-color: #f4e7e7;
   border-radius: 4px;
-}
-
-.parag {
-  font-size: 13px;
 }
 
 .btns-2 {
@@ -524,7 +553,7 @@ ul {
   }
   .lines::before {
     display: block;
-    background-image: url(lines.png);
+    background-image: url(white-lines.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 0 35px;
@@ -533,7 +562,7 @@ ul {
   }
   .lines::after {
     display: block;
-    background-image: url(lines.png);
+    background-image: url(white-lines.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 0 28px;
@@ -542,7 +571,53 @@ ul {
   }
 }
 
-@media only screen and (max-width: 600px) {
+.lines1::after {
+  background-image: url(white-lines.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 28px;
+  content: " ";
+} 
+
+.lines1::before {
+  background-image: url(white-lines.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 35px;
+  content: " ";
+} 
+
+@media only screen and (max-width: 600px)  {
+  .lines1 {
+    font-size: 40px;
+  }
+  .lines1::before {
+    display: block;
+    background-image: url(white-lines.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 35px;
+    white-space: pre-wrap;
+    content: "\A";
+  }
+  .lines1::after {
+    display: block;
+    background-image: url(white-lines.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 28px;
+    white-space: pre-wrap;
+    content: "\A";
+  }
+}
+
+
+
+.open-sans {
+  font-family: 'open sans' 
+}
+
+@media only screen and (max-width: 800px) {
   tr > td:not(:last-child):not(:nth-last-child(2)) {
     display: none;
   }
@@ -559,3 +634,7 @@ ul {
   height: 100%;
 }
 
+.semi-bold {
+  font-family: 'semibold' , open sans;
+  color: #726565;
+} 
